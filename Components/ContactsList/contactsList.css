@@ -1,0 +1,101 @@
+.c-contacts-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.c-contacts-list__item {
+    margin-bottom: 4rem;
+    padding: 0.3rem;
+    background-color: rgba(222, 241, 255, 0.356);
+    box-shadow: 0px 2px 4px 0px rgba(60, 60, 60, .11);
+    border-radius: 0.7rem;
+}
+
+.c-contacts-list__user-info {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgb(240 240 240);
+    margin: 0 -0.2rem;
+    padding: 0.2rem;
+}
+
+.c-contacts-list__username {
+    padding-left: 0.7rem;
+}
+
+.c-contacts-list__image-wrapper {
+    margin: 0;
+    padding: 0;
+    width: 70px;
+    height: 70px;
+    flex-shrink: 0;
+}
+
+.c-contacts-list__image {
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0px 2px 4px 0px rgba(45, 45, 45, .11);
+}
+
+.c-contacts-list__address {
+
+}
+
+.c-address-list {
+
+}
+
+.c-address-list__field {
+
+}
+
+.c-address-list__title {
+
+}
+
+.c-address-list__data {
+
+}
+
+.c-address-list__data A {
+    position: relative;
+}
+
+.c-address-list__data A:not(.c-link-disabled)::after {
+    content: " (click to see the map)";
+    text-decoration: underline;
+    font-size: 0.7rem;
+    color: rgba(79, 94, 104, 0.7);
+}
+
+
+.c-link-disabled {
+    pointer-events: none;
+}
+
+.c-mapbox-map {
+    height: 0;
+    margin: 0 auto;
+    transition: height .2s ease-out;
+}
+
+.c-mapbox-map.is-active {
+    height: 200px;
+}
+
+.c-mapbox-map.has-error {
+    height: 100px;
+    text-align: center;
+}
+
+.o-marker {
+    background-image: url('../../public/marker.png');
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}

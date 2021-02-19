@@ -1,0 +1,132 @@
+.c-form {
+    width: 100%;
+    max-width: 650px;
+    border: 1px solid rgba(135, 151, 172, 0.157);
+    margin-bottom: 5rem;
+}
+
+.c-form__field {
+    margin: 0;
+    border: 0;
+}
+
+.c-form__label {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.c-form__label--input-file {
+    position: relative;
+}
+
+/* .c-form__label--input-file::after {
+    content: "upload image";
+    position: absolute;
+    bottom: 0;
+    padding: 0.19rem 0.33rem;
+    border-radius: 0.15rem;
+    background-color: rgb(100 149 237);
+    color: rgb(248 248 248);
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+
+.c-form__label--input-file:hover::after {
+    color: rgb(72 131 237);
+    background: rgb(229 236 248);
+} */
+
+
+
+.c-form__label-text {
+
+}
+
+.c-form__label-info {
+    flex-basis: 100%;
+    margin-bottom: 0.5rem;
+    font-size: 0.4rem;
+    color: rgba(60, 60, 60, .75);
+}
+
+.c-form__input {
+    border: 0;
+    flex-grow: 1;
+    border-bottom: 1px solid rgb(187, 209, 250);
+}
+
+.c-form__input:invalid:not(:placeholder-shown):not(:focus) {
+    border-bottom-color: firebrick;
+}
+
+.c-form__input--file {
+
+}
+
+.c-form__input--fake {
+    position: relative;
+}
+
+.c-form__input--file.c-form__input--fake {
+    min-height: 18px;
+    font-size: 0.7rem;
+    border: 1px dashed rgba(60, 60, 60, 0.7);
+    cursor: pointer;
+}
+
+.c-form__input--file:focus ~ .c-form__input--file.c-form__input--fake {
+    border-color: rgb(16, 16, 16);
+    border-style: solid;
+    outline: 1px solid rgb(16, 16, 16);
+}
+
+::-ms-input-placeholder {
+    font-style: oblique;
+    font-size: 0.79rem;
+    font-weight: 100;
+    color: rgb(60 60 60 / 56%);
+}
+
+
+::placeholder {
+    font-style: oblique;
+    font-size: 0.79rem;
+    font-weight: 100;
+    color: rgb(60 60 60 / 56%);
+}
+
+.c-form__error {
+    flex-basis: 100%;
+    margin: 0;
+    font-size: 0.7rem;
+    color: rgb(178 34 34);
+    font-style: italic;
+    visibility: hidden;
+}
+
+.c-form__input:invalid:not(:placeholder-shown):not(:focus) ~ .c-form__error {
+    visibility: visible;
+}
+
+.c-form__button {
+    padding: 0.25rem 1rem;
+    background: cornflowerblue;
+    border: 0;
+    border-radius: 0.12rem;
+    color: rgb(248, 248, 248);
+    box-shadow: 0px 2px 5px 0px rgba(187, 209, 250, .12), 0px 5px 10px 0px rgba(187, 209, 250, .12);
+    cursor: pointer;
+} 
+
+.c-form__button:hover {
+    color: rgb(72, 131, 237);
+    background: rgb(229, 236, 248);
+}
+
+.c-form__button:active {
+    box-shadow: none;
+} 
+
+.c-form__button--submit {
+
+}
