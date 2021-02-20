@@ -104,6 +104,13 @@
     visibility: hidden;
 }
 
+/*
+    FALLBACK FOR IE11
+*/
+.browser-ie11 .c-form__input:invalid ~ .c-form__error {
+    visibility: visible;
+}
+
 .c-form__input:invalid:not(:placeholder-shown):not(:focus) ~ .c-form__error {
     visibility: visible;
 }

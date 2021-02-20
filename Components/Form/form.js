@@ -78,7 +78,7 @@ function Form(props) {
                 <label className="c-form__label" aria-describedby="addressInfoLabel">
                     <span className="c-form__label-text">Address</span>
                     <small className="c-form__label-info" id="addressInfoLabel">(Provide your address)</small>
-                    <input type="text" name="address" autoComplete="on" className="c-form__input" value={formInputs.address} onChange={handleInputChange} required minLength="5" pattern="^(?!\s+)[\w\s]+" placeholder="Israel Tel-Aviv Pinsker 15" />
+                    <input type="text" name="address" autoComplete="on" className="c-form__input" value={formInputs.address} onChange={handleInputChange} required minLength="5" pattern={document.isIE11 ? "^(?!\s+)[\w\s]+" : undefined} placeholder="Israel Tel-Aviv Pinsker 15" />
                     <p className="c-form__error">Can not be empty. Must include at least 5 characters. Permitted characters are letters and digits</p>
                 </label>
             </fieldset>
